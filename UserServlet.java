@@ -63,7 +63,7 @@ public class UserServlet extends HttpServlet {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            response.getWriter().println("Error: +2" + e.getMessage());
+            response.getWriter().println("<h1 bgcolor='black'> Please provide new User this User Name All ready exist<h1>");
         }
     }
 
@@ -86,7 +86,7 @@ public class UserServlet extends HttpServlet {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            response.getWriter().println("Error: " + e.getMessage());
+            response.getWriter().println("<h1 bgcolor='black'> Please provide valid  Credidantals <h1>");
         }
     }
 }
